@@ -28,7 +28,7 @@ pipeline
                   {
                     cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/index.html",
-                    htmlReportDirectory: "target/cucumber-html-report"
+                    jsonReportDirectory: "target/cucumber-html-report"
                   }
      }
 
@@ -38,7 +38,7 @@ pipeline
                        {
                          cucumber buildStatus: "UNSTABLE",
                          fileIncludePattern: "**/extent.html",
-                         htmlReportDirectory: "target/cucumber-reports/advanced-reports/extentreports"
+                         jsonReportDirectory: "target/cucumber-reports/advanced-reports/extentreports"
                        }
           }
  }
