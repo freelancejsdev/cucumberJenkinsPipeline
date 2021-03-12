@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.111061">
+<testcase classname="Login to nop commerce application" name="Verify login with valid credentials" time="10.111061">
+<failure message="org.opentest4j.AssertionFailedError&#10;&#9;at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:35)&#10;&#9;at org.junit.jupiter.api.Assertions.fail(Assertions.java:98)&#10;&#9;at utils.DriverUtils.click(DriverUtils.java:132)&#10;&#9;at pageObjects.HomePage.verifyLogout(HomePage.java:65)&#10;&#9;at steps.StepDefinitions.i_should_be_logged_in_successfully(StepDefinitions.java:62)&#10;&#9;at ✽.I should be logged in successfully(file:src/test/resources/features/login.feature:16)&#10;"><![CDATA[Given I navigate to url "https://demo.nopcommerce.com/".....................passed
+Then I should be navigated to home page.....................................passed
+When I click on login link..................................................passed
+Then I should be navigated to login page....................................passed
+When I enter email "qauser89@nop.com".......................................passed
+And I enter password "Testing@123"..........................................passed
+And I click on login button.................................................passed
+Then I should be logged in successfully.....................................failed
+
+StackTrace:
+org.opentest4j.AssertionFailedError
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:35)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:98)
+	at utils.DriverUtils.click(DriverUtils.java:132)
+	at pageObjects.HomePage.verifyLogout(HomePage.java:65)
+	at steps.StepDefinitions.i_should_be_logged_in_successfully(StepDefinitions.java:62)
+	at ✽.I should be logged in successfully(file:src/test/resources/features/login.feature:16)
+]]></failure>
+</testcase>
+</testsuite>
